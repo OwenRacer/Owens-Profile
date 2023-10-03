@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Flexbox styling</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+      <section class="top">
+        <h1>Owen Racer</h1>
+        <h2>Freelance journalist and photographer</h2>
+      </section>
+
+      <!-- <section class="photo"> -->
+
+      <figure>
+        <img class="headshot.jpg" src="images/headshot.jpg">
+        <figcaption>Owen Racer <span class="credit">Credit: Trevor Biggs</span></figcaption>
+      </figure>
+
+      <section class="text">
+        <p>Owen Racer is an award-winning multimedia journalist who is a full-time freelance reporter writing across beats. With past and current reporting focused on business news, environmental coverage, health news, technology, and more, the New York City-based writer has roots in geographically diverse local reporting while covering topics nationally. </p>
+        <p>The Cincinnati, Ohio native has taken his local coverage around the country and found passion in covering all things health, environmental, and injustices while frequenting business and other beat coverage. Owen spent years traveling the state’s on a sports beat prior to delving into cross-beat reporting and research.  </p>
+      </section>
+
+      <h3 class="flex-hed">Published Work</h3> <!-- broke the subhed out of text to correct alignment based on mock -->
+
+      <section class="flex">
+        <!-- flex box refers to the box that contains the "flexed" content -->
+
+        <section class="img_holder">
+          <!-- each img_holder is flexed content -->
+          <figure class="sub_img">
+            <img class="small" src="images/crawfish.jpg"> <!-- You should crop your images to be the same size before using them, otherwise, even with flex box, they come out uneven -->
+            <figcaption class="sub_cap">New Orleans, LA <span class="credit">Credit: Owen Racer</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>Buggin' Out Boils at Parleaux Beer Lab. 
+            </p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/EB.jpg">
+            <figcaption class="sub_cap">New Orleans, LA <span class="credit">Credit: Owen Racer</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>Erin Brown, a student at The NET: Gentilly. </p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/LAC.jpg">
+            <figcaption class="sub_cap">New Orleans, LA <span class="credit">Credit: Owen Racer</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>Lora Ann Chaisson, Principal Chief of the United Houma Nation. </p>
+          </section>
+        </section>
+
+      </section>
+      <!-- this ^ closes the flex box section -->
+
+    </div>
+
+    <!-- When you get to using javascript, you'll want to link to it at the bottom of the document, still inside the body. That's for later. -->
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Your javascript should be called here -->
+
+  </body>
+
+</html>
